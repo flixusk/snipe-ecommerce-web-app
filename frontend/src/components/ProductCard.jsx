@@ -24,7 +24,7 @@ const ProductCard = ({ id, image, name, price, brand, hoverImage }) => {
       <div className="p-4 relative">
         <h3 className="text-lg font-semibold mb-2">{name}</h3>
         <p className="text-gray-600 mb-2">{brand}</p>
-        <p className="text-green-500 font-bold">${price}</p>
+        <p className="text-green-500 font-bold">{price}</p>
         <button
           onClick={handleAddToCart}
           className="absolute top-4 right-4 bg-green-500 text-white rounded-full p-2 shadow-lg hover:bg-green-600 transition-colors duration-300"
